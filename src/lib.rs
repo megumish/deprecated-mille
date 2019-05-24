@@ -3,6 +3,7 @@
 
 pub mod bool;
 pub mod integer;
+pub mod iterator;
 
 /// This is enable to take difference.
 pub trait TakeDifference {
