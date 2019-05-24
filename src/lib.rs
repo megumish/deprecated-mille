@@ -1,6 +1,7 @@
 //! mille is toy vcs
 #![deny(missing_docs)]
 
+pub mod bool;
 pub mod integer;
 
 /// This is enable to take difference.
@@ -13,6 +14,8 @@ pub trait TakeDifference {
 }
 
 /// difference
+/// これはトレイトにした方が良いと思うかもしれないが、とりあえずenumとして定義しておき
+/// 複雑になってきてからトレイトにすることを考えるという決定をした。
 #[derive(PartialEq, Debug)]
 pub enum Difference<T> {
     /// no difference
